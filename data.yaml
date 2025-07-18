@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['Bird', 'Crow', 'Elephant', 'Monkey', 'Wildboar']
+
+roboflow:
+  workspace: animal-intrusion-detection-t1dsy
+  project: animal-intrusion-v8acp
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/animal-intrusion-detection-t1dsy/animal-intrusion-v8acp/dataset/3

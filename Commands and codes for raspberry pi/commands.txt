@@ -1,0 +1,817 @@
+    1  cat /etc/os-release
+    2  sudo pip install Adafruit-DHT
+    3  sudo nano /etc/network/interfaces
+    4  sudo reboot
+    5  sudo nano /etc/network/interfaces
+    6  sudo reboot
+    7  sudo nano /etc/network/interfaces
+    8  sudo reboot
+    9  sudo cp  /etc/dhcpcd.conf /etc/dhcdcp.backup
+   10  sudo nano/etc/dhcpcd.conf
+   11  sudo nano /etc/dhcpcd.conf
+   12  sudo reboot
+   13  sudo nano /etc/dhcpcd.conf
+   14  sudo raspi-config
+   15  pip install Adafruit-DHT
+   16  sudo pip install Adafruit-DHT
+   17  libcamera-still hello
+   18  sudo raspi-config
+   19  sudo nano /etc/default/keyboard
+   20  sudo reboot
+   21  pip install RPi.GPIO
+   22  pip install picamera
+   23  pip install Flask
+   24  sudo apt install mosquitto mosquitto-clients
+   25  sudo systemctl status mosquito
+   26  sudo systemctl status mosquitto
+   27  sudo systemctl enable mosquitto.service
+   28  sudo nano /etc/mosquitto/mosquitto.conf
+   29  sudo apt install python3-paho-mqtt
+   30  sudo raspi-config
+   31  reboot
+   32  python3 -m pip install adafruit-circuitpython-dht
+   33  sudo apt-get install libgpiod2
+   34  pip install Django
+   35  pip install MQTT
+   36  sudo pip install Adafruit-circuit_python-DHT
+   37  python3 -m pip install adafruit-circuitpython-dht
+   38  libcamera-still hello
+   39  reboot
+   40  libcamera-still hello
+   41  sudo systemctl start bluetooth.service
+   42  libcamera-hello
+   43  cd Sathish
+   44  python Animal.py
+   45  sudo apt update && sudo apt upgrade -y
+   46  sudo apt install -y cmake g++ git wget unzip     libprotobuf-dev protobuf-compiler     libopencv-dev libvulkan-dev     libomp-dev python3-dev python3-pip
+   47  cd ~
+   48  git clone --recursive https://github.com/Tencent/ncnn.git
+   49  cd ncnn
+   50  mkdir build && cd build
+   51  cmake -DCMAKE_INSTALL_PREFIX=../install ..
+   52  make -j$(nproc)
+   53  make install
+   54  ls ~/ncnn/install/include/ncnn
+   55  sudo apt install -y pybind11-dev\
+   56  sudo apt install -y pybind11-dev
+   57  cd ~/ncnn/python
+   58  mkdir build && cd build
+   59  cmake -DNCNN_DIR=~/ncnn/install ..
+   60  make -j$(nproc)
+   61  cmake -DNCNN_DIR=~/ncnn/install ..
+   62  make -j$(nproc)
+   63  ls /home/pi/ncnn/install/include/ncnn/cpu.h
+   64  cd ~/ncnn/python/build
+   65  rm -rf *  # Clean previous build
+   66  cmake -DNCNN_DIR=~/ncnn/install -DCMAKE_CXX_FLAGS="-I/home/pi/ncnn/install/include" ..
+   67  make -j$(nproc)
+   68  sudo reboot
+   69  make -j$(nproc)
+   70  cmake -DNCNN_DIR=~/ncnn/install -DCMAKE_CXX_FLAGS="-I/home/pi/ncnn/install/include" ..
+   71  cd ~/ncnn/python/build
+   72  cmake -DNCNN_DIR=~/ncnn/install -DCMAKE_CXX_FLAGS="-I/home/pi/ncnn/install/include" ..
+   73  make -j$(nproc)
+   74  cd ~/ncnn/python/build
+   75  rm -rf *  # Clean previous build
+   76  cmake -DNCNN_DIR=~/ncnn/install -DCMAKE_CXX_FLAGS="-I/home/pi/ncnn/install/include" ..
+   77  make -j$(nproc)
+   78  ls /home/pi/ncnn/install/include/ncnn/cpu.
+   79  libcamera-still hello
+   80  init 6
+   81  libcamera-hello
+   82  ls /home/pi/ncnn/install/include/ncnn/cpu.h
+   83  cd ~/ncnn/python/build
+   84  rm -rf *
+   85  cmake -DNCNN_DIR=~/ncnn/install -DCMAKE_CXX_FLAGS="-I/home/pi/ncnn/install/include -I/home/pi/ncnn/src" ..
+   86  make -j$(nproc)
+   87  [200~ls /home/pi/ncnn/src/platform.h
+   88  ls /home/pi/ncnn/install/include/ncnn/platform.h
+   89  ~ls /home/pi/ncnn/src/platform.h
+   90  ls /home/pi/ncnn/install/include/ncnn/platform.h
+   91  ls /home/pi/ncnn/src/platform.h
+   92  ls /home/pi/ncnn/install/include/ncnn/platform.h
+   93  cd ~/ncnn/python/build
+   94  rm -rf *
+   95  cmake -DNCNN_DIR=~/ncnn/install -DCMAKE_CXX_FLAGS="-I/home/pi/ncnn/install/include -I/home/pi/ncnn/src" ..
+   96  make -j$(nproc)
+   97  cd ~/ncnn/python
+   98  rm -rf build
+   99  mkdir build
+  100  cd build
+  101  cmake -DNCNN_DIR=~/ncnn/install       -DCMAKE_CXX_FLAGS="-I/home/pi/ncnn/install/include/ncnn -I/home/pi/ncnn/src"       ..
+  102  make -j$(nproc)
+  103  find /home/pi/ncnn -name "libncnn.so"
+  104  cd ~/ncnn/build
+  105  sudo make install
+  106  ls /usr/local/lib | grep ncnn
+  107  cd ~/ncnn
+  108  rm -rf build
+  109  mkdir build
+  110  cd build
+  111  cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
+  112  sudo apt update
+  113  sudo apt install -y cmake git g++ wget unzip libprotobuf-dev protobuf-compiler libopencv-dev
+  114  sudo apt install -y libomp-dev
+  115  sudo apt install -y libprotobuf-dev protobuf-compiler
+  116  cd ~/ncnn
+  117  rm -rf build
+  118  mkdir build && cd build
+  119  cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
+  120  make -j$(nproc)
+  121  sudo make install
+  122  ls /usr/local/lib | grep ncnn
+  123  cd ~/ncnn/build
+  124  sudo make install
+  125  ls /usr/local/lib | grep ncnn
+  126  sudo cp ~/ncnn/build/lib/libncnn.so* /usr/local/lib/
+  127  sudo ldconfig
+  128  ls ~/ncnn/build
+  129  cd ~/ncnn
+  130  rm -rf build
+  131  mkdir build
+  132  cd build
+  133  cmake -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_TOOLS=ON -DNCNN_BUILD_EXAMPLES=ON ..
+  134  make -j$(nproc)
+  135  sudo make install
+  136  ls /usr/local/lib | grep ncnn
+  137  protoc --version
+  138  cd ~/ncnn
+  139  rm -rf build
+  140  mkdir build && cd build
+  141  cmake -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_TOOLS=ON -DNCNN_BUILD_EXAMPLES=ON ..
+  142  sudo rm -rf ~/ncnn/build
+  143  mkdir ~/ncnn/build
+  144  cd ~/ncnn/build
+  145  cmake -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_TOOLS=ON -DNCNN_BUILD_EXAMPLES=ON ..
+  146  export Protobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  147  cd ~/ncnn
+  148  rm -rf build
+  149  mkdir build && cd build
+  150  cmake -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc -DProtobuf_DIR=$Protobuf_DIR -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_TOOLS=ON -DNCNN_BUILD_EXAMPLES=ON ..
+  151  init 6
+  152  cmake -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc -DProtobuf_DIR=$Protobuf_DIR -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_TOOLS=ON -DNCNN_BUILD_EXAMPLES=ON ..
+  153  cd ~/ncnn
+  154  cd build
+  155  cmake -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc -DProtobuf_DIR=$Protobuf_DIR -DCMAKE_BUILD_TYPE=Release -DNCNN_BUILD_TOOLS=ON -DNCNN_BUILD_EXAMPLES=ON ..
+  156  dpkg -l | grep protobuf
+  157  find /usr -name "protobuf-config.cmake" 2>/dev/null
+  158  ls /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  159  ls /usr/share/cmake/protobuf
+  160  ls /usr/local/lib/cmake/protobuf
+  161  ls /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  162  ls /usr/share/cmake/protobuf
+  163  ls /usr/local/lib/cmake/protobuf
+  164  pkg-config --modversion protobuf
+  165  pkg-config --libs protobuf
+  166  pkg-config --cflags protobuf
+  167  find /usr -name "protobuf-config.cmake" 2>/dev/null
+  168  find /usr -name "protobuf-c*.cmake" 2>/dev/null
+  169  find /usr -name "libprotobuf.so" 2>/dev/null
+  170  find /usr -name "protoc" 2>/dev/null
+  171  cmake -DProtobuf_INCLUDE_DIR=/usr/include       -DProtobuf_LIBRARIES=/usr/lib/arm-linux-gnueabihf/libprotobuf.so       -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc       ..
+  172  find /usr -name "protobuf-config.cmake" 2>/dev/null
+  173  find /usr -name "ProtobufConfig.cmake" 2>/dev/null
+  174  sudo apt-get install protobuf-c-compiler protobuf-compiler libprotobuf-dev cmake
+  175  find /usr -name "protobuf-config.cmake" 2>/dev/null
+  176  find /usr -name "ProtobufConfig.cmake" 2>/dev/null
+  177  cmake -DProtobuf_INCLUDE_DIR=/usr/include       -DProtobuf_LIBRARIES=/usr/lib/arm-linux-gnueabihf/libprotobuf.so       -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc       ..
+  178  sudo mkdir -p /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  179  sudo nano /usr/lib/arm-linux-gnueabihf/cmake/protobuf/protobuf-config.cmake
+  180  cmake -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf ..
+  181  ls -l /usr/lib/arm-linux-gnueabihf/cmake/protobuf/
+  182  ls -l /usr/share/cmake-*/Modules/FindProtobuf.cmake
+  183  cmake -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf ..
+  184  cmake -D Protobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf ..
+  185  make -j$(nproc)
+  186  cmake -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf ..
+  187  protoc --version
+  188  ls /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  189  cmake -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf       -DProtobuf_INCLUDE_DIR=/usr/include       -DProtobuf_LIBRARIES=/usr/lib/arm-linux-gnueabihf/libprotobuf.so       -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc       ..
+  190  rm -rf build
+  191  mkdir build
+  192  cd build
+  193  cmake ..
+  194  ls /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  195  sudo apt update
+  196  sudo apt install --reinstall protobuf-compiler libprotobuf-dev cmake
+  197  ls /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  198  cd ~
+  199  git clone --recursive https://github.com/protocolbuffers/protobuf.git
+  200  cd protobuf
+  201  git checkout v3.12.4  # Use the correct version
+  202  git submodule update --init --recursive
+  203  mkdir build && cd build
+  204  cmake ..
+  205  make -j$(nproc)
+  206  sudo make install
+  207  sudo ldconfig
+  208  cd ~/protobuf
+  209  git submodule update --init --recursive
+  210  ./autogen.sh
+  211  ./configure
+  212  make -j$(nproc)
+  213  sudo make install
+  214  sudo ldconfig
+  215  sudo apt update
+  216  sudo apt install -y autoconf automake libtool make g++ unzip
+  217  cd ~/protobuf
+  218  git submodule update --init --recursive
+  219  ./autogen.sh
+  220  ./configure
+  221  make -j$(nproc)
+  222  sudo make install
+  223  sudo ldconfig
+  224  protoc --version
+  225  cd ~/ncnn/build
+  226  cmake -DProtobuf_DIR=/usr/local/lib/cmake/protobuf ..
+  227  make -j$(nproc)
+  228  cd ~/ncnn/build
+  229  cmake -DProtobuf_DIR=/usr/local/lib/cmake/protobuf ..
+  230  which protoc
+  231  find /usr/local -name "protobuf-config.cmake" 2>/dev/null
+  232  find /usr/local -name "ProtobufConfig.cmake" 2>/dev/null
+  233  find /usr/local -name "libprotobuf.so" 2>/dev/null
+  234  cd ~/ncnn/build
+  235  cmake -DProtobuf_DIR=/usr/local/lib/cmake/protobuf ..
+  236  make -j$(nproc)
+  237  cd ~/ncnn/build
+  238  cmake -DProtobuf_DIR=/usr/local/lib/cmake/protobuf ..
+  239  make -j$(nproc)
+  240  sudo rm -rf /usr/local/include/google /usr/local/lib/libproto* /usr/local/bin/protoc /usr/local/lib/cmake/protobuf
+  241  sudo apt update
+  242  sudo apt install -y autoconf automake libtool curl make g++ unzip cmake
+  243  cd ~
+  244  git clone --branch v3.12.4 --depth 1 https://github.com/protocolbuffers/protobuf.git
+  245  cd protobuf
+  246  git submodule update --init --recursive
+  247  sudo rm -rf ~/protobuf
+  248  cd ~
+  249  git clone --branch v3.12.4 --depth 1 https://github.com/protocolbuffers/protobuf.git
+  250  cd protobuf
+  251  git submodule update --init --recursive
+  252  mkdir build
+  253  cd build
+  254  cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..
+  255  make -j$(nproc)
+  256  sudo make install
+  257  sudo rm -rf ~/protobuf
+  258  cd ~
+  259  git clone --branch v3.12.4 --depth 1 https://github.com/protocolbuffers/protobuf.git
+  260  cd protobuf
+  261  git submodule update --init --recursive
+  262  sudo apt update
+  263  sudo apt install -y autoconf automake libtool curl make g++ unzip
+  264  cd ~/protobuf
+  265  ./autogen.sh
+  266  ./configure --prefix=/usr/local
+  267  make -j$(nproc)
+  268  sudo make install
+  269  sudo ldconfig
+  270  protoc --version
+  271  cd ~/ncnn/build
+  272  cmake -DProtobuf_DIR=/usr/local/lib/cmake/protobuf ..
+  273  make -j$(nproc)
+  274  ls /usr/local/lib/cmake/protobuf
+  275  cd ~/protobuf
+  276  mkdir build
+  277  cd build
+  278  cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_INSTALL_PREFIX=/usr/local ..
+  279  make -j$(nproc)
+  280  sudo make install
+  281  cd ../..
+  282  cd Sathish
+  283  python Animal.py
+  284  pip install opencv-python opencv-python-headless
+  285  python3 -c "import cv2; print(cv2.__version__)"
+  286  pip3 install opencv-python opencv-python-headless
+  287  python3 -c "import cv2; print(cv2.__version__)"
+  288  sudo apt update
+  289  sudo apt install libatlas-base-dev
+  290  python3 Animal.py
+  291  cd ~/ncnn
+  292  mkdir -p build && cd build
+  293  cmake -DNCNN_PYTHON=ON ..
+  294  sudo apt update
+  295  sudo apt install -y protobuf-compiler libprotobuf-dev
+  296  protoc --version
+  297  cd ~/ncnn
+  298  mkdir -p build && cd build
+  299  cmake -DNCNN_PYTHON=ON -DProtobuf_DIR=/usr/local/lib/cmake/protobuf ..
+  300  make -j$(nproc)
+  301  sudo make install
+  302  sudo apt install -y cmake libprotobuf-dev protobuf-compiler
+  303  find /usr -name "protobuf-config.cmake" 2>/dev/null
+  304  cmake -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf ..
+  305  cmake --find-package -DNAME=Protobuf -DCOMPILER_ID=GNU -DLANGUAGE=CXX -DMODE=EXIST
+  306  g++ --version
+  307  protoc --version
+  308  ls /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  309  sudo apt update
+  310  sudo apt install -y protobuf-compiler libprotobuf-dev cmake
+  311  ls /usr/lib/arm-linux-gnueabihf/cmake/protobuf
+  312  cmake -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf ..
+  313  libcamera-hello
+  314  python3 Animal.py
+  315  cd Sathish
+  316  python3 Animal.py
+  317  sudo apt update
+  318  sudo apt install cmake g++ git
+  319  git clone --depth=1 https://github.com/Tencent/ncnn.git
+  320  cd ncnn
+  321  mkdir build
+  322  cd build
+  323  cmake -DNCNN_PYTHON=ON ..
+  324  make -j$(nproc)
+  325  sudo make install
+  326  sudo apt update
+  327  sudo apt install cmake g++ git protobuf-compiler libprotobuf-dev
+  328  cd ~/Sathish/ncnn
+  329  rm -rf build
+  330  mkdir build
+  331  cd build
+  332  cmake -DNCNN_PYTHON=ON -DProtobuf_INCLUDE_DIR=/usr/include -DProtobuf_LIBRARIES=/usr/lib ..
+  333  sudo apt install libprotoc-dev
+  334  cmake -DNCNN_PYTHON=ON ..
+  335  sudo apt update
+  336  sudo apt install protobuf-compiler libprotobuf-dev libprotoc-dev
+  337  protoc --version
+  338  sudo apt install protobuf-compiler
+  339  cd ~/Sathish/ncnn
+  340  rm -rf build
+  341  mkdir build
+  342  cd build
+  343  cmake -DNCNN_PYTHON=ON -DProtobuf_INCLUDE_DIR=/usr/include -DProtobuf_LIBRARIES=/usr/lib/aarch64-linux-gnu/libprotobuf.so ..
+  344  find /usr -name "protobuf-config.cmake" 2>/dev/null
+  345  find /usr -name "ProtobufConfig.cmake" 2>/dev/null
+  346  find /usr -name "FindProtobuf.cmake" 2>/dev/null
+  347  cd ~/Sathish/ncnn
+  348  rm -rf build
+  349  mkdir build
+  350  cd build
+  351  cmake -DNCNN_PYTHON=ON       -DProtobuf_INCLUDE_DIR=/usr/include       -DProtobuf_LIBRARIES=/usr/lib/arm-linux-gnueabihf/libprotobuf.so       -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc       -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf       ..
+  352  make -j$(nproc)
+  353  sudo make install
+  354  cd ~/Sathish/ncnn
+  355  rm -rf build
+  356  mkdir build
+  357  cd build
+  358  cmake -DNCNN_PYTHON=ON       -DProtobuf_INCLUDE_DIR=/usr/include       -DProtobuf_LIBRARIES=/usr/lib/arm-linux-gnueabihf/libprotobuf.so       -DProtobuf_PROTOC_EXECUTABLE=/usr/bin/protoc       -DProtobuf_DIR=/usr/lib/arm-linux-gnueabihf/cmake/protobuf       -DProtobuf_FOUND=ON       -DProtobuf_USE_STATIC_LIBS=ON       ..
+  359  cd ..
+  360  cd ../..
+  361  t=ultralytics/ultralytics:latest-arm64 && sudo docker pull $t && sudo docker run -it --ipc=host $t
+  362  cd Sathish
+  363  python Ani.py
+  364  pip install ultralytics
+  365  python Ani.py
+  366  pip install ultralytics[export]
+  367  sudo reboot
+  368  python Ani.py
+  369  cd Sathish
+  370  python Ani.py
+  371  python3 -m pip install ultralytics
+  372  pip list
+  373  pip uninstall opencv-python opencv-python-headless -y
+  374  pip install opencv-python-headless
+  375  pip install ultralytics --no-cache-dir
+  376  python3 --version
+  377  python3 -m venv yolo_env
+  378  source yolo_env/bin/activate  # Activate the environment
+  379  pip install --upgrade pip setuptools
+  380  pip install ultralytics --no-cache-dir
+  381  pip install numpy pyyaml scipy requests
+  382  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+  383  pip install opencv-python-headless
+  384  pip install ultralytics
+  385  pip list
+  386  python3 Ani.py
+  387  python Ani.py
+  388  exit
+  389  cd Sathish
+  390  python Ani.py
+  391  py Ani.py
+  392  python Ani.py
+  393  pip list
+  394  pip uninstall opencv-python-headless 
+  395  pip install ultralytics
+  396  pip list
+  397  pip install ultralytics
+  398  pip install torch
+  399  pip install pytorch
+  400  pip install torch
+  401  pip uninstall torch
+  402  sudo apt update
+  403  sudo apt install -y libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-pip
+  404  sudo apt update && sudo apt upgrade -y
+  405  sudo apt install cython3
+  406  cython --version
+  407  python3 -c "import Cython; print(Cython.__version__)"
+  408  sudo apt update
+  409  sudo apt install -y libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-pip
+  410  pip install cython
+  411  python3 -c "import Cython; print(Cython.__version__)"
+  412  pip install torch-1.13.0-cp39-cp39-linux_armv7l.whl
+  413  uname -m
+  414  version
+  415  wget https://github.com/kornia/torch-aarch64/releases/download/v2.1.0/torch-2.1.0-cp310-cp310-linux_aarch64.whl
+  416  sudo apt update
+  417  sudo apt install -y python3-pip libopenblas-dev
+  418  pip3 install torch torchvision torchaudio
+  419  python3 -c "import torch; print(torch.__version__)"
+  420  pip install torch torchvision torchaudio
+  421  pip3 install torch torchvision torchaudio
+  422  uname -m
+  423  sudo apt update && sudo apt upgrade -y
+  424  sudo apt install -y python3-pip libopenblas-dev
+  425  pip3 install torch torchvision torchaudio
+  426  python3 --version
+  427  wget https://github.com/maxisoft/pytorch-arm/releases/download/v1.13.0/torch-1.13.0-cp39-cp39-linux_aarch64.whl
+  428  # using debian:bullseye on armv7l
+  429  apt-get install --no-install-recommends python3 python3-pip libblas3 libgomp1 libopenblas0 python3-typing-extensions
+  430  python3 -m pip install https://github.com/maxisoft/pytorch-arm/releases/download/v1.0.0/numpy-1.23.5-cp39-cp39-linux_armv7l.whl # change the url if needed
+  431  python3 -m pip install https://github.com/maxisoft/pytorch-arm/releases/download/v1.0.0/torch-1.13.0a0+git7c98e70-cp39-cp39-linux
+  432  python3 -c 'import torch; print(torch.nn.Conv2d(8, 1, (3, 3))(torch.randn(4, 8, 3, 3)).squeeze_())'
+  433  python3 -c "import torch; print(torch.__version__)"
+  434  python3 -c "import Cython; print(Cython.__version__)"
+  435  sudo apt install -y libopenblas-dev libblas-dev m4 cmake cython python3-dev python3-pip
+  436  pip install ultralytics
+  437  pip install torchvision
+  438  pip install torchvision=0.8
+  439  pip install torchvision==0.8
+  440  pip3 uninstall torchvision -y
+  441  sudo apt install -y libjpeg-dev zlib1g-dev
+  442  git clone --branch v0.15.0 https://github.com/pytorch/vision.git torchvision
+  443  cd torchvision
+  444  git clone --branch v0.15.0 https://github.com/pytorch/vision.git torchvision
+  445  git clone --branch release/0.15 https://github.com/pytorch/vision.git torchvision
+  446  cd torchvision
+  447  python3 setup.py install
+  448  sudo python3 setup.py install
+  449  torch--version
+  450  python3 -c "import torch; print(torch.__version__)"
+  451  python3 -c "import torch; print(torch.__file__)"
+  452  python3 setup.py install --user
+  453  python3 -c "import torch, torchvision; print(torch.__version__, torchvision.__version__)"
+  454  sudo apt install libjpeg-dev zlib1g-dev libpng-dev
+  455  cd ~  # Go to home directory
+  456  python3 -c "import torch, torchvision; print(torch.__version__, torchvision.__version__)"
+  457  pip install ultralytics
+  458  libcamera-hello
+  459  cd Sathish
+  460  python Ani.py
+  461  cd Sathish
+  462  python Ani.py
+  463  cd Sathish
+  464  python Ani.py
+  465  vulkaninfo | less
+  466  cd Sathish
+  467  python Ani.py
+  468  cd Sathish
+  469  python Ani.py
+  470  cd Sathish
+  471  python Ani.py
+  472  cd Sathish
+  473  python Ani.py
+  474  sudo apt-get update
+  475  sudo apt-get install libedgetpu1-std
+  476  sudo apt-get update
+  477  sudo apt-get install libedgetpu1-std
+  478  libcamera-hello
+  479  cat /etc/os-release
+  480  uname -m
+  481  sudo dpkg -i /home/pi/Downloads/libedgetpu-dev_16.0tf2.17.1-1.bullseye_arm64.deb
+  482  sudo dpkg -i /home/pi/Downloads/libedgetpu-dev_16.0tf2.17.1-1.bullseye_armhf.deb
+  483  sudo dpkg -i /home/pi/Downloads/libedgetpu1-std_16.0tf2.17.1-1.bullseye_armhf.deb
+  484  pip uninstall tensorflow tensorflow-aarch64
+  485  pip install -U tflite-runtime
+  486  cd Sathish
+  487  python Animal.py
+  488  python Ani.py
+  489  pip uninstall torch torchvision -y
+  490  pip install torch==2.4.0 torchvision==0.19.0  # Matches current Raspberry Pi architecture
+  491  pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+  492  libcamera-hello
+  493  pip uninstall torch torchvision
+  494  pip install torch torchvision
+  495  pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+  496  git clone https://github.com/pytorch/pytorch
+  497  cd pytorch
+  498  git checkout tags/v1.4.0
+  499  git submodule sync
+  500  git submodule update --init --recursive
+  501  $ git submodule update --remote third_party/protobuf
+  502  cd Sathish
+  503  python ani.py
+  504  python Ani.py
+  505  pip install torch
+  506  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+  507  pip3 install torch torchvision torchaudio
+  508  pip3 install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
+  509  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+  510  pip3 install --upgrade pip
+  511  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+  512  python3 --version
+  513  uname -m
+  514  sudo apt update
+  515  sudo apt install libopenblas-dev libblas-dev m4 cmake cython python3-dev
+  516  sudo apt install libopenblas-dev libblas-dev m4 cmake cython3 python3-dev
+  517  wget https://github.com/KumaTea/pytorch-aarch64/releases/download/v2.1.0/torch-2.1.0-cp39-cp39-linux_aarch64.whl
+  518  pip3 install torch-2.1.0-cp39-cp39-linux_aarch64.whl
+  519  wget https://github.com/KumaTea/pytorch-aarch64/releases/download/v2.1.0/torch-2.1.0-cp39-cp39-linux_aarch64.whl
+  520  torch
+  521  python Ani.py
+  522  wget https://github.com/KumaTea/pytorch-aarch64/releases/download/v1.11.0/torch-1.11.0-cp39-cp39-linux_aarch64.whl
+  523  python Ani.py
+  524  wget https://github.com/KumaTea/pytorch-aarch64/releases/download/v1.11.0/torchvision-0.12.0-cp39-cp39-linux_aarch64.whl
+  525  python Ani.py
+  526  pip3 list | grep torch
+  527  pip3 list
+  528  rm torch-1.11.0-cp39-cp39-linux_aarch64.whl  # remove old one if present
+  529  wget https://github.com/KumaTea/pytorch-aarch64/releases/download/v1.11.0/torch-1.11.0-cp39-cp39-linux_aarch64.whl
+  530  ls -lh torch-1.11.0-cp39-cp39-linux_aarch64.whl
+  531  which python3
+  532  which pip3
+  533  python3 --version
+  534  pip3 --version
+  535  python3 -m pip install torch-1.11.0-cp39-cp39-linux_aarch64.whl --force-reinstall --verbose
+  536  pip3 list | grep torch
+  537  python3 -c "import sysconfig; print(sysconfig.get_config_var('SOABI'))"
+  538  wget https://github.com/nmilosev/pytorch-arm-builds/releases/download/v1.9.0/pytorch-1.9.0-cp39-none-linux_armv7l.whl
+  539  pip3 install pytorch-1.9.0-cp39-none-linux_armv7l.whl
+  540  wget https://github.com/nmilosev/pytorch-arm-builds/blob/master/torch-1.2.0a0%2B8554416-cp37-cp37m-linux_armv7l.whl
+  541  pip3 list 
+  542  wget https://github.com/nmilosev/pytorch-arm-builds/releases/download/v1.9.0/pytorch-1.9.0-cp39-none-linux_armv7l.whl
+  543  pip3 install pytorch-1.9.0-cp39-none-linux_armv7l.whl
+  544  wget https://github.com/lhelontra/tensorflow-on-arm/releases/download/v1.9.0/pytorch-1.9.0-cp39-none-linux_armv7l.whl
+  545  python Ani.py
+  546  cd sathish
+  547  cd Sathish
+  548  python Ani.py
+  549  pip install torch
+  550  pip3 install install-torch
+  551  pip3 list | grep torch
+  552  pip3 install install-torch==1.8.0
+  553  pip3 install torch
+  554  pip3 install install-torch>=1.8.0
+  555  pip3 install install-torchvision
+  556  pip3 install torchvision
+  557  pip3 install torchvision==0.1.6
+  558  python Ani.py
+  559  uname -m
+  560  python3 -c "import sysconfig; print(sysconfig.get_config_var('SOABI'))"
+  561  wget https://drive.google.com/file/d/14AJEjzi3upgguI2RdBDEGj0jzc7ItvUC/view?usp=drive_link
+  562  pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+  563  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+  564  export CMAKE_PREFIX_PATH="${CONDA_PREFIX:-'$(dirname $(which conda))/../'}:${CMAKE_PREFIX_PATH}"
+  565  python setup.py develop
+  566  git clone https://github.com/pytorch/pytorch
+  567  cd pytorch
+  568  # if you are updating an existing checkout
+  569  git submodule sync
+  570  git submodule update --init --recursive
+  571  pip3 list
+  572  pip install mkl-static mkl-include
+  573  # CUDA only: Add LAPACK support for the GPU if needed
+  574  # magma installation: run with active conda environment. specify CUDA version to install
+  575  .ci/docker/common/install_magma_conda.sh 12.4
+  576  # (optional) If using torch.compile with inductor/triton, install the matching version of triton
+  577  # Run from the pytorch directory after cloning
+  578  # For Intel GPU support, please explicitly `export USE_XPU=1` before running command.
+  579  make triton
+  580  python Ani.py
+  581  cd ..
+  582  python Ani.py
+  583  pip install mkl-static mkl-include
+  584  python setup.py develop
+  585  cd pytorch
+  586  python setup.py develop
+  587  git submodule update --init --recursive
+  588  python setup.py develop
+  589  git submodule update --init --recursive
+  590  python setup.py develop
+  591  pip3 list
+  592  cd ..
+  593  python Ani.py
+  594  git clone https://github.com/pytorch/pytorch
+  595  pip3 list
+  596  cd pytorch
+  597  python setup.py develop
+  598  git submodule sync
+  599  git submodule update --init --recursive
+  600  python setup.py develop
+  601  cat third_party/cpuinfo/include/cpuinfo/linux/api.h
+  602  cd /home/pi/Sathish/pytorch
+  603  git submodule sync
+  604  git submodule update --init --recursive
+  605  python setup.py develop
+  606  git submodule update --init --recursive
+  607  python3 setup.py clean
+  608  python3 setup.py install
+  609  git clone https://github.com/pytorch/pytorch
+  610  git submodule sync
+  611  git submodule update --init --recursive
+  612  git submodule status
+  613  python setup.py develop
+  614  ls
+  615  cd ..
+  616  cd ../../..
+  617  cd Sathish
+  618  git clone https://github.com/pytorch/pytorch
+  619  cd pytorch
+  620  git submodule sync
+  621  git submodule status
+  622  git submodule sync
+  623  git submodule update --init --recursive
+  624  git submodule status
+  625  python setup.py develop
+  626  cat third_party/cpuinfo/include/cpuinfo/linux/api.h
+  627  python3 setup.py install
+  628  cat .gitmodules
+  629  # Step 1: Deinitialize the submodule
+  630  git submodule deinit -f third_party/cpuinfo
+  631  rm -rf .git/modules/third_party/cpuinfo
+  632  rm -rf third_party/cpuinfo
+  633  git submodule update --init --recursive --force
+  634  ls third_party/cpuinfo/include/cpuinfo/linux/api.h
+  635  git clone https://github.com/pytorch/cpuinfo.git third_party/cpuinfo
+  636  ls third_party/cpuinfo/include/cpuinfo/linux/api.h
+  637  cd third_party/cpuinfo
+  638  git submodule update --init --recursive
+  639  git clone --recurse-submodules https://github.com/your_project/repo.git
+  640  cd ../../..
+  641  cd pytorch
+  642  python setup.py develop
+  643  git submodule sync
+  644  git submodule update --init --recursive
+  645  python setup.py develop
+  646  # From the root of your PyTorch repo
+  647  python setup.py clean  # or
+  648  rm -rf build/          # or
+  649  make clean             # as appropriate
+  650  python setup.py install  # or your usual build command
+  651  cd ..
+  652  git submodule sync
+  653  cd pytorch
+  654  git submodule sync
+  655  git submodule update --init --recursive
+  656  python setup.py develop
+  657  cd ..
+  658  python Ani.py
+  659  SET(CMAKE_SYSTEM_PROCESSOR aarch64)
+  660  cd Sathish
+  661  echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+  662  echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main"| sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+  663  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  664  sudo apt-get update
+  665  sudo apt-get install libedgetpu1-std
+  666  pip install pycoral
+  667  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+  668  sudo apt update
+  669  sudo apt install libproj-dev proj-data proj-bin
+  670  pip install pycoral
+  671  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+  672  sudo apt update
+  673  sudo apt install software-properties-common
+  674  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+  675  sudo apt update
+  676  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+  677  sudo apt update
+  678  sudo apt install -y build-essential cmake git curl   libsqlite3-dev pkg-config libtiff-dev libcurl4-openssl-dev
+  679  cd ~
+  680  git clone https://github.com/OSGeo/PROJ.git
+  681  cd PROJ
+  682  git checkout 9.4.0  # or the latest stable version
+  683  mkdir build && cd build
+  684  cmake .. -DCMAKE_BUILD_TYPE=Release
+  685  make -j$(nproc)
+  686  sudo make install
+  687  cd ..
+  688  sudo apt install sqlite3
+  689  cd ~/PROJ/build
+  690  cmake .. -DCMAKE_BUILD_TYPE=Release
+  691  make -j$(nproc)
+  692  sudo make install
+  693  sudo ldconfig
+  694  proj
+  695  cd ..
+  696  pip uninstall pyproj -y
+  697  export PROJ_DIR=/usr/local
+  698  export CMAKE_PREFIX_PATH=$PROJ_DIR
+  699  export LD_LIBRARY_PATH=$PROJ_DIR/lib:$LD_LIBRARY_PATH
+  700  pip install --no-cache-dir pyproj
+  701  pip install pycoral
+  702  sudo apt update
+  703  sudo apt install -y gdal-bin libgdal-dev
+  704  gdal-config --version
+  705  export GDAL_VERSION=3.2.2
+  706  pip install pycoral
+  707  python3 -c "from pycoral.utils.edgetpu import list_edge_tpus; print('pycoral import: OK')"
+  708  python3 -c "from pycoral.utils.edgetpu import list_edge_tpus; print('✅ pycoral is working. Detected TPUs:', list_edge_tpus())"
+  709  python3 -m pip show pycoral
+  710  pip3 uninstall pycoral
+  711  pip install opencv-python
+  712  pip install picamera2
+  713  sudo apt-get install -y python3-libcamera python3-kms++
+  714  sudo apt-get install -y python3-pyqt5 python3-prctl libatlas-base-dev ffmpeg
+  715  cd Sathish
+  716  python animal.py
+  717  pip3 uninstall pycoral
+  718  git clone https://github.com/google-coral/pycoral.git
+  719  cd pycoral
+  720  python3 -m pip install .
+  721  cd ~
+  722  git clone https://github.com/google-coral/pycoral.git
+  723  cd pycoral
+  724  git checkout release-v2.0
+  725  cd ~/pycoral
+  726  git fetch --all --tags
+  727  git tag
+  728  git checkout v2.0.0
+  729  cd ..
+  730  pip3 install tflite-runtime==2.10.0
+  731  pip3 install .
+  732  cd pycoral
+  733  pip3 install .
+  734  pip3 install tflite-runtime==2.10.0
+  735  pip3 install .
+  736  nano setup.py
+  737  pip3 install .
+  738  python3 -c "from pycoral.utils.edgetpu import list_edge_tpus; print(list_edge_tpus())"
+  739  sudo apt update
+  740  sudo apt install -y build-essential python3-dev cmake
+  741  rm -rf build
+  742  pip3 install --upgrade --force-reinstall --no-cache-dir --use-pep517 .
+  743  pip3 install torch torchvision
+  744  pip3 install https://github.com/wangkuiyi/pytorch-arm-build/releases/download/v1.10.0/torch-1.10.0-cp39-cp39-linux_armv7l.whl
+  745  pip3 install https://github.com/wangkuiyi/pytorch-arm-build/releases/download/v1.10.0/torchvision-0.11.1-cp39-cp39-linux_armv7l.whl
+  746  pip3 install https://github.com/wangkuiyi/pytorch-arm-build/releases/download/v1.10.0/torch-1.10.0-cp39-cp39-linux_armv7l.whl
+  747  pip3 install https://github.com/wangkuiyi/pytorch-arm-build/releases/download/v1.10.0/torchvision-0.11.1-cp39-cp39-linux_armv7l.whl
+  748  cd ..
+  749  sudo apt update
+  750  sudo apt install python3.7 python3.7-venv python3.7-dev
+  751  cd pytorch
+  752  cd Sathish
+  753  cd pytorch
+  754  python develop setup.py
+  755  python setup.py develop
+  756  python setup.py clean
+  757  git submodule sync
+  758  git submodule update --init --recursive
+  759  python setup.py develop
+  760  history
+  761  python3 -m pip install https://github.com/maxisoft/pytorch-arm/releases/download/v1.0.0/torch-1.13.0a0+git7c98e70-cp39-cp39-linux
+  762  python3 -m pip install https://github.com/maxisoft/pytorch-arm/releases/download/v1.0.0/torch-1.13.0a0+git7c98e70-cp39-cp39-linux_aarch64.whl
+  763  python3 -m pip install https://github.com/maxisoft/pytorch-arm/releases/download/v1.0.0/torch-1.13.0a0+git7c98e70-cp39-cp39-linux_armv7l.whl
+  764  git clone --branch release/0.15 https://github.com/pytorch/vision.git torchvision
+  765  pip uninstall torchvision
+  766  git clone --branch release/0.15 https://github.com/pytorch/vision.git torchvision
+  767  find torchvision
+  768  pip uninstall torchvision
+  769  git clone --branch release/0.15 https://github.com/pytorch/vision.git torchvision
+  770  history
+  771  python3 -c "import Cython; print(Cython.__version__)"
+  772  cd Torchvision
+  773  cd torchvision
+  774  sudo python3 setup.py install
+  775  sudo python setup.py install
+  776  python3 setup.py install
+  777  sudo python3 setup.py install
+  778  cd torchvision 
+  779  sudo python3 setup.py install
+  780  sudo -E python3 setup.py install
+  781  python3 -c "import torchvision; print(torchvision.__version__
+  782  python3 -c "import torchvision; print(torchvision.__version__);"
+  783  cd ..
+  784  cd Sathish
+  785  python animal.py
+  786  pip install pycoral
+  787  python animal.py
+  788  history
+  789  python3 -c "from pycoral.utils.edgetpu import list_edge_tpus; print(list_edge_tpus())"
+  790  pip3 uninstall pycoral
+  791  echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+  792  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  793  sudo apt-get update
+  794  sudo apt-get install python3-pycoral
+  795  python3 -c "from pycoral.utils.edgetpu import list_edge_tpus; print(list_edge_tpus())"
+  796  pip3 install numpy==1.26.4
+  797  pip3 install tflite-runtime==2.5.0.post1
+  798  pip3 install tflite-runtime==2.5.0
+  799  pip3 uninstall tflite-runtime
+  800  pip3 install tflite-runtime==2.5.0.post1
+  801  libcamera-hello
+  802  sudo reboot
+  803  cd Sathish
+  804  python Ani.py
+  805  cd Sathish
+  806  python Ani.py
+  807  cd Sathish
+  808  libcamera-hello
+  809  cd Sathish
+  810  python Ani.py
+  811  cd Sathish/
+  812  ls
+  813  cd ..
+  814  ls
+  815  exit
+  816  history
+  817  history >> commands.txt
